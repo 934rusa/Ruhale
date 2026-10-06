@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RUHALE | Erkek Giyim</title>
+
+<meta name="description" content="RUHALE Erkek Giyim — Tarzın sessiz imzası. Çok yakında e-ticaret hizmetimizle sizlerleyiz.">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#070707;
+    color:#eeeae3;
+    font-family:Arial, Helvetica, sans-serif;
+    min-height:100vh;
+}
+
+/* ÜST MENÜ */
+
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:90px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 6%;
+    z-index:20;
+}
+
+.header-logo{
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:25px;
+    letter-spacing:7px;
+    color:#eeeae3;
+}
+
+/* HAMBURGER */
+
+.menu{
+    width:34px;
+    height:25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    cursor:pointer;
+}
+
+.menu span{
+    width:100%;
+    height:1px;
+    background:#e8e5df;
+    display:block;
+}
+
+/* ANA ALAN */
+
+.hero{
+    min-height:100vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:100px 7% 70px;
+}
+
+.content{
+    width:100%;
+    max-width:1200px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:70px;
+}
+
+/* SOL TARAF */
+
+.left{
+    padding-left:4%;
+}
+
+.small-title{
+    font-size:10px;
+    letter-spacing:5px;
+    color:#77736d;
+    text-transform:uppercase;
+    margin-bottom:28px;
+}
+
+.brand{
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:clamp(55px,7vw,105px);
+    font-weight:400;
+    letter-spacing:12px;
+    line-height:.9;
+    margin-left:10px;
+}
+
+.slogan{
+    margin-top:38px;
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:clamp(21px,2.2vw,30px);
+    line-height:1.35;
+    color:#d8d4cd;
+}
+
+.line{
+    width:70px;
+    height:1px;
+    background:#55524d;
+    margin:34px 0;
+}
+
+.coming{
+    font-size:12px;
+    letter-spacing:5px;
+    color:#d5d1ca;
+    text-transform:uppercase;
+}
+
+.ecommerce{
+    margin-top:13px;
+    font-size:11px;
+    letter-spacing:2px;
+    color:#68655f;
+}
+
+/* RH LOGO */
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.rh-logo{
+    width:min(100%,520px);
+    height:auto;
+}
+
+/* ALT */
+
+.footer-note{
+    position:absolute;
+    bottom:30px;
+    left:0;
+    width:100%;
+    text-align:center;
+    font-size:9px;
+    letter-spacing:4px;
+    color:#46433e;
+    text-transform:uppercase;
+}
+
+/* MENÜ GÖRÜNÜMÜ */
+
+.menu-panel{
+    position:fixed;
+    top:90px;
+    right:6%;
+    width:290px;
+    background:#0d0d0d;
+    border:1px solid #282725;
+    padding:28px;
+    z-index:30;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(-10px);
+    transition:.3s ease;
+}
+
+.menu-panel.active{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+.menu-title{
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:20px;
+    letter-spacing:3px;
+    margin-bottom:18px;
+}
+
+.menu-item{
+    display:block;
+    padding:15px 0;
+    border-bottom:1px solid #222;
+    color:#c7c3bc;
+    font-size:11px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+/* MOBİL */
+
+@media(max-width:800px){
+
+    header{
+        height:75px;
+        padding:0 7%;
+    }
+
+    .header-logo{
+        font-size:21px;
+        letter-spacing:5px;
+    }
+
+    .hero{
+        padding:110px 8% 70px;
+    }
+
+    .content{
+        grid-template-columns:1fr;
+        gap:45px;
+        text-align:center;
+    }
+
+    .logo-area{
+        order:-1;
+    }
+
+    .rh-logo{
+        width:85%;
+        max-width:430px;
+    }
+
+    .left{
+        padding:0;
+    }
+
+    .small-title{
+        margin-bottom:22px;
+    }
+
+    .brand{
+        font-size:52px;
+        letter-spacing:7px;
+        margin-left:7px;
+    }
+
+    .slogan{
+        margin-top:28px;
+        font-size:22px;
+    }
+
+    .line{
+        margin:28px auto;
+    }
+
+    .coming{
+        font-size:10px;
+        letter-spacing:4px;
+    }
+
+    .ecommerce{
+        font-size:9px;
+        letter-spacing:1.5px;
+    }
+
+    .footer-note{
+        display:none;
+    }
+
+    .menu-panel{
+        top:75px;
+        right:7%;
+        width:260px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-logo">
+        RUHALE
+    </div>
+
+    <div class="menu" onclick="openMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</header>
+
+
+<!-- HAMBURGER MENÜ -->
+
+<div class="menu-panel" id="menuPanel">
+
+    <div class="menu-title">
+        RUHALE
+    </div>
+
+    <div class="menu-item">Mont</div>
+    <div class="menu-item">Tişört</div>
+    <div class="menu-item">Sweatshirt</div>
+    <div class="menu-item">Gömlek</div>
+    <div class="menu-item">Pantolon</div>
+    <div class="menu-item">Erkek Giyim</div>
+
+</div>
+
+
+<!-- ANA SAYFA -->
+
+<main class="hero">
+
+    <div class="content">
+
+
+        <!-- SOL TARAF -->
+
+        <section class="left">
+
+            <div class="small-title">
+                RUHALE ERKEK GİYİM
+            </div>
+
+            <h1 class="brand">
+                RUHALE
+            </h1>
+
+            <div class="slogan">
+                Tarzın sessiz imzası.
+            </div>
+
+            <div class="line"></div>
+
+            <div class="coming">
+                ÇOK YAKINDA
+            </div>
+
+            <div class="ecommerce">
+                E-ticaret hizmetimizle sizlerleyiz.
+            </div>
+
+        </section>
+
+
+        <!-- RH LOGO -->
+
+        <section class="logo-area">
+
+            <svg class="rh-logo"
+                 viewBox="0 0 600 600"
+                 xmlns="http://www.w3.org/2000/svg">
+
+                <rect width="600" height="600" fill="#070707"/>
+
+                <g
+                    fill="none"
+                    stroke="#eeeae3"
+                    stroke-width="3"
+                    stroke-linejoin="miter">
+
+                    <!-- R -->
+
+                    <path
+                        d="
+                        M145 145
+                        L300 145
+                        C370 145 405 180 405 235
+                        C405 290 365 315 300 315
+                        L225 315
+                        M225 145
+                        L225 455
+                        M145 455
+                        L305 455
+                        M300 315
+                        L445 455
+                        "
+                    />
+
+                    <!-- H -->
+
+                    <path
+                        d="
+                        M345 205
+                        L345 455
+                        M475 205
+                        L475 455
+                        M345 330
+                        L475 330
+                        M315 205
+                        L375 205
+                        M445 205
+                        L505 205
+                        M315 455
+                        L375 455
+                        M445 455
+                        L505 455
+                        "
+                    />
+
+                </g>
+
+                <!-- İç monogram -->
+
+                <text
+                    x="300"
+                    y="520"
+                    text-anchor="middle"
+                    fill="#eeeae3"
+                    font-family="Georgia, serif"
+                    font-size="18"
+                    letter-spacing="8">
+                    RUHALE
+                </text>
+
+            </svg>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<div class="footer-note">
+    EST. 2026 · RUHALE
+</div>
+
+
+<script>
+
+function openMenu(){
+
+    const menu = document.getElementById("menuPanel");
+
+    menu.classList.toggle("active");
+
+}
+
+</script>
+
+</body>
+</html>
